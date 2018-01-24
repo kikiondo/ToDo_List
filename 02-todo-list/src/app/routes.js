@@ -6,7 +6,7 @@ routes
   .get('/', (req, res, next) => {
     res.render('index', {
       title: 'ToDO List',
-      description: 'ToDo List Isomórfico con Vanilla JS'
+      description: 'ToDo List Isomórfico con Vanilla JS ._.)/'
     })
   })
 
