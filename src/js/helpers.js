@@ -4,7 +4,7 @@
 const ENTER_KEY = 13,
     c = console.log,
     d = document,
-    j = json,
+    j = JSON,
     ls = localStorage
 
 // Destructuración
