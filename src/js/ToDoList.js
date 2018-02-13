@@ -84,7 +84,9 @@ export default class ToDoList {
 
         tasks.forEach(task => this.renderTask(task))
 
-        Array.from(listTasks).forEach(input => {
+        Array.from(listTasks).forEach(input => { 
+            /*Aparentemente es un arreglo pero solo es uno o lista de nodos, o html collection.
+             por si solo, es por eso que se agrega un Array.from() -> Es un casting.*/
             input.querySelector('input[type="checkbox"]').addEventListener('change', e => {
                 let task = tasks.filter(task => task.id == e.target.id)
                 //c(task)
