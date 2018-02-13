@@ -23,8 +23,8 @@ export default class ToDoList{
 
                 tasks.push( newTask )
                 ls.setItem( this.key, j.stringify( tasks ) )
-
-                c( this.key, newTask, ls)
+                this.renderTask( newTask ) //Renderizar en el navegador la nueva tarea una vez ya creada
+                e.target.value = ''
         }
     }
 
